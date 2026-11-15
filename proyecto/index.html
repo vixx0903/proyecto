@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los discos de Evelyn</title>
+  <style>
+   
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #faf6f0; 
+      color: #3d352e;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    
+    nav {
+      background-color: #e6d8c7;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: bold;
+       }
+
+    .menu-links a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #5c4332;
+      font-weight: 500;
+    }
+
+    .menu-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Encabezado principal */
+    header {
+      padding: 50px 20px 30px;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+      color: #4a3525;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #705c4d;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Cuadrícula de los discos */
+    .aparador {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .disco {
+      background: #ffffff;
+      border-radius: 15px;
+      padding: 25px 20px;
+      width: 200px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      transition: transform 0.2s ease;
+    }
+
+    .disco:hover {
+      transform: translateY(-5px);
+    }
+
+    
+    .vinilo {
+      width: 90px;
+      height: 90px;
+      background: radial-gradient(circle, #e6d8c7 20%, #2b2623 22%, #1a1715 100%);
+      border-radius: 50%;
+      margin: 0 auto 15px;
+    }
+
+    .disco h3 {
+      margin: 10px 0 5px;
+      font-size: 1.1rem;
+      color: #4a3525;
+    }
+
+    .disco p {
+      font-size: 0.9rem;
+      color: #7a6a5d;
+      margin-bottom: 15px;
+    }
+
+    /* Botón de acción */
+    .btn {
+      display: inline-block;
+      background-color: #c87d55;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #b06740;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#" class="logo">💿 Los discos de Evelyn</a>
+    <div class="menu-links">
+      <a href="discos-base.html">Discos</a>
+      <a href="#recomendar">Recomendar canción</a>
+      <a href="#sobre">Sobre el proyecto</a>
+    </div>
+  </nav>
+
+
+  <header>
+    <h1>Un refugio musical para tus días difíciles</h1>
+    <p>Elige el disco que mejor acompañe lo que sientes hoy. No estás solo.</p>
+  </header>
+
+
+  <section id="discos" class="aparador">
+    
+    <div class="disco">
+      <div class="vinilo"></div>
+      <h3>Remontadas de semestre</h3>
+      <p>...</p>
+      <a href="disco-1.html" class="btn">Escuchar</a>
+    </div>
+
+    <div class="disco">
+      <div class="vinilo"></div>
+      <h3>¿Mal dia?</h3>
+      <p>playlist que te recuerda que no estas sol@</p>
+      <a href="disco-2.html" class="btn">Escuchar</a>
+    </div>
+
+    <div class="disco">
+      <div class="vinilo"></div>
+      <h3>¿Tienes sueño?</h3>
+      <p>Un impulso suave para recuperar energía.</p>
+      <a href="disco-3.html" class="btn">Escuchar</a>
+    </div>
+
+    <div class="disco">
+      <div class="vinilo"></div>
+      <h3>Lobo alfa</h3>
+      <p>Para desahogarte y soltar la frustración.</p>
+      <a href="#disco4" class="btn">Escuchar</a>
+    </div>
+
+  </section>
+
+</body>
+</html>

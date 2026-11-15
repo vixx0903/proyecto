@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Canciones</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #faf6f0;
+      color: #3d352e;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Barra superior */
+    nav {
+      background-color: #e6d8c7;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #5c4332;
+      text-decoration: none;
+    }
+
+    .btn-volver { text-decoration: none;
+      color: #5c4332;
+      font-weight: bold;
+      background-color: #faf6f0;
+      padding: 6px 14px;
+      border-radius: 15px;
+      font-size: 0.9rem;
+    }
+
+    /* Contenedor principal de la lista */
+    .contenedor-lista {
+      max-width: 750px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    .cabecera-disco {
+      text-align: center;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #e6d8c7;
+      padding-bottom: 20px;
+    }
+
+    .cabecera-disco h1 {
+      margin: 0 0 10px;
+      color: #4a3525;
+    }
+
+    .cabecera-disco p {
+      margin: 0;
+      color: #7a6a5d;
+    }
+
+    /* Tabla alineada para Canción / Artista / Enlace */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th {
+      text-align: left;
+      padding: 12px;
+      color: #5c4332;
+      border-bottom: 2px solid #e6d8c7;
+      font-size: 0.95rem;
+    }
+
+    td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #f0e8de;
+      font-size: 0.95rem;
+    }
+
+    tr:hover {
+      background-color: #fdfaf6;
+    }
+
+    .btn-yt {
+      display: inline-block;
+      background-color: #c87d55;
+      color: white;
+      padding: 6px 14px;
+      border-radius: 15px;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: bold;
+    }
+
+    .btn-yt:hover {
+      background-color: #b06740;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menú Superior -->
+  <nav>
+    <a href="index.html" class="logo">💿 Los discos de Evelyn</a>
+    <a href="index.html" class="btn-volver">← Volver al inicio</a>
+  </nav>
+
+  <!-- Lista de Canciones en Blanco -->
+  <div class="contenedor-lista">
+    
+    <div class="cabecera-disco">
+      <h1>💿 Título del Disco o Categoría</h1>
+      <p>Escribe aquí una pequeña descripción o dedicatoria para este disco.</p>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Canción</th>
+          <th>Artista</th>
+          <th>Enlace</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <!-- Fila vacía 1 -->
+        <tr>
+          <td>1</td>
+          <td>[When you find me]
+          <td>[Plenka]</td>
+          <td><a href="https://youtu.be/-yee7X7zhrw?si=gICFCQ4NTmAnLARi" target="_blank" class="btn-yt">▶️ YouTube</a></td>
+        </tr>
+
+        <!-- Fila vacía 2 -->
+        <tr>
+          <td>2</td>
+          <td>[Les]</td>
+          <td>[Childish gambino]</td>
+          <td><a href="https://youtu.be/L8gGHqPBuZM?si=KqleqvaellkUSmeC" target="_blank" class="btn-yt">▶️ YouTube</a></td>
+        </tr>
+
+        <!-- Fila vacía 3 -->
+        <tr>
+          <td>3</td>
+          <td>[Noble]</td>
+          <td>[F3miii]</td>
+          <td><a href="https://youtu.be/YskL2pz4j_Y?si=36KtH4UnOuwTp8oO" target="_blank" class="btn-yt">▶️ YouTube</a></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+  </div>
+
+</body>
+</html>
